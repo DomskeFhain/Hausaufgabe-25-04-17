@@ -2,10 +2,9 @@ import './App.css';
 import {useEffect, useState} from "react"
 
 function App() {
-  // let zahl = 15
   const [zahl, setZahl] = useState(0)
   const [colour, setColour] = useState("black")
-  
+
   useEffect(() => {
     console.log("Farbe wurde geändert")
   }, [colour])
